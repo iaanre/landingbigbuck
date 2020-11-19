@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	height: 100%;
+	width: 99%;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+body{
+	font-family: "Suez One", serif;
+	min-height: 100%;
+	background-image: url(../img/fondopromo-05.jpg); 
+
+}
+
+.contenedor{
+	display: grid;
+	gap: 10px;
+	grid-template: 
+	"header 	header 		header" 		80px 
+	"imagen 	formulario 	beneficios" 	520px
+	"rescate	rescate		rescate"		70px
+	"footer 	footer 		footer" 		55px /
+	 auto 		40% 		18%;
+}
+
+.header{
+	grid-area: header;
+	background-color: #F38F1A; 
+	border-radius: 10px;
+}
+
+h1{
+	font-family: 'Suez One', serif;
+	font-size: 2.800em;
+	color: #ffffff;
+	text-align: center;
+	padding-top: 1%;
+}
+
+.imagen{
+	grid-area: imagen;
+}
+
+.premio{
+	padding-top: 13%;
+	width: 100%;
+}
+
+.formulario{
+	grid-area: formulario;
+	background-color: #23B5D3;
+	border-radius: 10px;
+	border: #274060 1px solid;
+	display: inline;
+}
+
+.rescate{
+	grid-area: rescate;
+	background-color: #F5B041;
+	color: white;
+	text-align: center;
+	padding-top: 1.5%;
+}
+
+h2{
+	font-family: 'Alegreya', sans-serif;
+	font-size: 1.7em;
+	font-weight: bold;
+	color: #1b2845;
+	padding-left: 5px;
+	padding-top: 25px;
+	text-align: center;
+}
+
+.rotulo1{
+	font-family: 'Alegreya', sans-serif;
+	font-size: 1.000em;
+	font-weight: bold;
+	color: #ffffff;
+	padding-left: 7.5%;
+	border-radius: 10px;
+}
+
+.rotulo2{
+	font-family: 'Alegreya', sans-serif;
+	font-size: 1.000em;
+	font-weight: bold;
+	color: #ffffff;
+	padding-left: 5%;
+}
+
+.rotulo3{
+	font-family: 'Alegreya', sans-serif;
+	font-size: 1.000em;
+	font-weight: bold;
+	color: #ffffff;
+	padding-left: 26%;
+
+
+}
+
+.rotulo4{
+	font-family: 'Alegreya', sans-serif;
+	font-size: 1.000em;
+	font-weight: bold;
+	color: #ffffff;
+	margin-left: 10%;
+	text-align: center;
+	
+}
+
+.txtformu{
+	text-align: center;
+}
+
+.completar{
+	font-family: 'Alegreya', sans-serif;
+	font-size: 1.000em;
+	width: 70%;
+	height: 30%;
+	margin-left: 15%;
+}
+
+/*.boton{
+	width: 45%;
+	height: 50px;
+	font-family: 'Suez One', serif;
+	font-size: 1.550em;
+	background-color: #FA2C00;
+	color: #ffffff;
+	margin-left: 27%;
+	border-radius: 10px;
+	margin-top: 2%; 
+}
+
+.boton:hover{
+	transform: sha(1.1);
+	text-shadow: 1px 1px 2px #000000;
+}*/
+
+button{
+	width: 45%;
+	height: 50px;
+	font-family: 'Suez One', serif;
+	font-size: 1.550em;
+	background-color: #FA2C00;
+	color: #ffffff;
+	margin-left: 27%;
+	border-radius: 10px;
+	margin-top: 2%;
+	cursor: pointer;
+	}
+
+	.btn1{
+		background-color: red;
+		color: white;
+		border: 3px solid orange;
+		transition-property: background-color, color, border;
+		transition-duration: 0.4s;
+	}
+
+	.btn1:hover {
+		background-color: orange;
+		color: white;
+		border: 3px solid red;
+
+	}
+
+.beneficios{
+	grid-area: beneficios;
+	background-color: #4168C7;
+	border-radius: 10px;
+	border: #274060 1px solid;
+	color: white;
+}
+
+ul{
+	list-style-type: none;
+}
+
+ul li{
+	padding-top: 37px;
+}
+
+#imgbeneficio{
+	width: 22%;
+}
+
+.beneftitulo{
+	font-family: 'Suez One', serif;
+	font-size: 1.140em;
+	color: white;
+	padding-top: 4%;
+}
+
+.dosxuno{
+	font-family: 'Suez One', serif;
+	font-size: 3.140em;
+	color: white;
+}
+
+.footer{
+	grid-area: footer;
+	background-color: #F38F1A;
+}
+
+.nombre{
+	font-family: 'Alegreya', sans-serif;
+	font-size: 0.940em;
+	padding-left: 20px;
+	padding-top: 23px;
+	text-align: center;
+	color: white;
+}
+
+.nombre1{
+	text-decoration: none;
+}
+/*tablet*/
+@media (max-width: 800px) and (min-width: 600px) {
+
+	.contenedor{
+
+		grid-template: 
+		"header 		header" 		10% 
+		"imagen 		formulario" 	auto
+		"beneficios 	beneficios" 	33%
+		"rescate 		rescate"		7%
+		"footer 		footer" 		6% /
+		 auto 			40%;
+ 	}
+
+ 	h1{
+ 		padding-top: 3%;
+		font-size: 1.750em;
+	}
+
+	.premio{
+		padding-top: 20%;
+		width: 100%;
+	}
+
+	h2{
+		font-size: 1.330em;
+	}
+
+	.rotulo1{
+		font-size: 0.950em;
+		padding-left: 10%;
+		
+	}
+
+	.rotulo2{
+		font-size: 0.950em;
+		padding-left: 10%;
+		
+	}
+
+	.rotulo3{
+		font-size: 0.950em;
+		padding-left: 10%;
+
+	}
+
+	.rotulo4{
+		font-size: 0.950em;
+		color: white;
+		text-align: center;
+
+	}
+
+	.txtformu{
+	text-align: center;
+}
+
+	.completar{
+		margin-left: 14%;
+	}
+
+	button{
+		width: 59%;
+		height: 58px;
+		font-size: 1.400em;
+		margin-left: 22%;
+		padding-top: 2%;
+		margin-bottom: 1%;
+	}
+
+	
+	ul{
+		list-style-type: none;
+		display: inline;
+	}
+
+	ul li{
+		padding-top: 2%;
+		display: inline;
+	}
+
+	#imgbeneficio{
+		width: 8%;
+		display: inline;
+	}
+
+	.beneficios{
+		font-size: 0.800em;
+		color: white;
+	}
+
+
+}
+
+/*telefono*/
+@media (max-width: 599px) {
+	
+	.contenedor{
+		grid-template: 
+		"header"		7%
+		"imagen" 		25%
+		"formulario"	auto
+		"beneficios" 	28%
+		"rescate"		8%
+		"footer" 		5.5%;
+		
+	}
+
+	h1{
+		font-size: 1.400em;
+		text-align: center;
+		padding-top: 4%;
+	}
+
+	.premio{
+		padding-top: 8%;
+		width: 75%;
+		margin-left: 10%;
+	}
+
+	h2{
+		font-size: 1.330em;
+	}
+
+	.rotulo1{
+		font-size: 0.950em;
+		
+		
+	}
+
+	.rotulo2{
+		position: relative;
+		font-size: 0.950em;
+	}
+
+	.rotulo3{
+		font-size: 0.950em;
+		
+	}
+
+	.completar{
+		margin-left: 14%;
+	}
+
+	button{
+		width: 43%;
+		height: 50px;
+		font-size: 1.400em;
+		margin-left: 27%;
+		padding-top: 1%;
+		margin-bottom: 1%;
+	}
+
+	ul{
+		list-style-type: none;
+		display: inline;
+	}
+
+	ul li{
+		padding-top: 4%;
+		display: inline;
+	}
+
+	.rescate{
+		padding-top: 5%;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+}
